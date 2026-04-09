@@ -1,0 +1,1750 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Workshop — Acerte a Sílaba</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <p class="header-eyebrow">Workshop · TCC · UENP 2026</p>
+                <h1>Acerte<br />a Sílaba</h1>
+                <p class="header-desc">
+                    Siga as 8 etapas do guia para criar um jogo educacional do
+                    zero. Use os prompts prontos — edite os campos destacados
+                    conforme seu contexto e copie o texto completo.
+                </p>
+            </div>
+        </header>
+
+        <nav class="step-nav" id="step-nav">
+            <a href="#links" class="nav-item">Links</a>
+            <a href="#prereq" class="nav-item">00</a>
+            <a href="#setup" class="nav-item">SP</a>
+            <a href="#step-1" class="nav-item">01</a>
+            <a href="#step-2" class="nav-item">02</a>
+            <a href="#step-3" class="nav-item">03</a>
+            <a href="#step-4" class="nav-item">04</a>
+            <a href="#step-5" class="nav-item">05</a>
+            <a href="#step-6" class="nav-item">06</a>
+            <a href="#step-7" class="nav-item">07</a>
+            <a href="#step-8" class="nav-item">08</a>
+        </nav>
+
+        <main>
+            <!-- LINKS ÚTEIS -->
+            <section id="links" class="step links-section">
+                <div class="step-top">
+                    <span class="step-num links-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                            />
+                            <path
+                                d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                            />
+                        </svg>
+                    </span>
+                    <div>
+                        <h2 class="step-title">Links Úteis</h2>
+                        <p class="step-subtitle">
+                            Acesso rápido a todas as ferramentas do guia
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <div class="links-grid">
+                        <a
+                            class="link-card"
+                            href="https://antigravity.google/download"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=antigravity.google&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">Antigravity</span>
+                                <span class="link-desc"
+                                    >IDE com IA — código Godot por linguagem
+                                    natural</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+
+                        <a
+                            class="link-card"
+                            href="https://godotengine.org"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=godotengine.org&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">Godot Engine</span>
+                                <span class="link-desc"
+                                    >Engine de jogos gratuita e open
+                                    source</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+
+                        <a
+                            class="link-card"
+                            href="https://gemini.google/overview/image-generation/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">NanoBanana</span>
+                                <span class="link-desc"
+                                    >Geração de imagens por IA via Gemini</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+
+                        <a
+                            class="link-card"
+                            href="https://gemini.google.com"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">Gemini</span>
+                                <span class="link-desc"
+                                    >IA do Google para geração de
+                                    documentos</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+
+                        <a
+                            class="link-card"
+                            href="https://chatgpt.com"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">ChatGPT</span>
+                                <span class="link-desc"
+                                    >Alternativa ao Gemini para geração de
+                                    documentos</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+
+                        <a
+                            class="link-card"
+                            href="https://elevenlabs.io"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">ElevenLabs</span>
+                                <span class="link-desc"
+                                    >Síntese de voz — sílabas e palavras
+                                    faladas</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+
+                        <a
+                            class="link-card"
+                            href="https://kenney.nl"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=kenney.nl&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">Kenney.nl</span>
+                                <span class="link-desc"
+                                    >Assets visuais gratuitos — licença
+                                    CC0</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+
+                        <a
+                            class="link-card"
+                            href="https://freesound.org"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=freesound.org&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">Freesound</span>
+                                <span class="link-desc"
+                                    >Repositório de efeitos sonoros livres</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+
+                        <a
+                            class="link-card"
+                            href="https://www.remove.bg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                class="link-icon"
+                                src="https://www.google.com/s2/favicons?domain=remove.bg&sz=64"
+                                alt=""
+                            />
+                            <span class="link-info">
+                                <span class="link-name">Remove.bg</span>
+                                <span class="link-desc"
+                                    >Remoção de fundo de imagens — online e
+                                    gratuito</span
+                                >
+                            </span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRÉ-REQUISITO -->
+            <section id="prereq" class="step">
+                <div class="step-top">
+                    <span class="step-num">00</span>
+                    <div>
+                        <h2 class="step-title">Antes de Começar</h2>
+                        <p class="step-subtitle">
+                            Configure o ambiente antes de iniciar as etapas
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <ol class="step-list">
+                        <li data-n="1">
+                            Baixe e instale o
+                            <a
+                                href="https://godotengine.org"
+                                target="_blank"
+                                rel="noopener"
+                                >Godot Engine</a
+                            >
+                        </li>
+                        <li data-n="2">
+                            Baixe e instale o
+                            <a
+                                href="https://antigravity.google/download"
+                                target="_blank"
+                                rel="noopener"
+                                >Antigravity</a
+                            >
+                        </li>
+                        <li data-n="3">Abra o Antigravity</li>
+                        <li data-n="4">Crie um novo projeto Godot</li>
+                        <li data-n="5">
+                            Abra a pasta do projeto Godot com o Antigravity
+                        </li>
+                    </ol>
+
+                    <div class="note warn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                            />
+                            <line x1="12" y1="9" x2="12" y2="13" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                        O Antigravity requer conta Google pessoal (não
+                        Workspace). Instale antes do workshop para não perder
+                        tempo.
+                    </div>
+                </div>
+            </section>
+
+            <!-- SETUP -->
+            <section id="setup" class="step">
+                <div class="step-top">
+                    <span class="step-num">SP</span>
+                    <div>
+                        <h2 class="step-title">Setup do Projeto</h2>
+                        <p class="step-subtitle">
+                            Execute este prompt no Antigravity antes de começar
+                            as etapas
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <p class="step-desc">
+                        Com o projeto aberto no Antigravity, cole o prompt
+                        abaixo no painel do agente para organizar a estrutura de
+                        pastas seguindo as melhores práticas do Godot.
+                    </p>
+
+                    <div class="prompt-block" id="pbsp">
+                        <div class="prompt-meta">
+                            <span class="prompt-label">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polyline points="9 11 12 14 22 4" />
+                                    <path
+                                        d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                    />
+                                </svg>
+                                Prompt
+                            </span>
+                            <button
+                                class="btn-copy"
+                                onclick="copyBlock('pbsp', this)"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <rect
+                                        x="9"
+                                        y="9"
+                                        width="13"
+                                        height="13"
+                                        rx="2"
+                                    />
+                                    <path
+                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                    />
+                                </svg>
+                                Copiar
+                            </button>
+                        </div>
+                        <div class="prompt-body">
+                            <div class="prompt-segment">
+                                Acabei de criar um projeto novo no Godot.
+                                Organize a estrutura de pastas seguindo as
+                                melhores práticas para a versão mais recente do
+                                Godot, considerando que será um jogo 2D
+                                educacional simples chamado "Acerte a Sílaba". A
+                                estrutura deve incluir pastas para cenas,
+                                scripts, assets (imagens e áudio) e fontes. Crie
+                                as pastas e explique brevemente para que serve
+                                cada uma.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ETAPA 1 -->
+            <section id="step-1" class="step">
+                <div class="step-top">
+                    <span class="step-num">01</span>
+                    <div>
+                        <h2 class="step-title">Objetivo Pedagógico</h2>
+                        <p class="step-tool">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                            <a
+                                href="https://antigravity.google/download"
+                                target="_blank"
+                                rel="noopener"
+                                >Antigravity</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <p class="step-desc">
+                        Defina o que o jogo vai ensinar, para quem, e com qual
+                        embasamento pedagógico. Execute na mesma conversa do
+                        Antigravity — o agente vai acumular contexto entre as
+                        etapas.
+                    </p>
+                    <p class="step-desc">
+                        Você também pode usar o
+                        <a
+                            href="https://gemini.google.com"
+                            target="_blank"
+                            rel="noopener"
+                            >Gemini</a
+                        >
+                        ou
+                        <a
+                            href="https://chatgpt.com"
+                            target="_blank"
+                            rel="noopener"
+                            >ChatGPT</a
+                        >
+                        se preferir.
+                    </p>
+
+                    <div class="note">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                        Execute os prompts das Etapas 1 a 5 em sequência na
+                        mesma conversa do Antigravity. O agente vai acumular
+                        contexto e você não precisará repetir informações entre
+                        etapas.
+                    </div>
+
+                    <div class="prompt-block" id="pb1">
+                        <div class="prompt-meta">
+                            <span class="prompt-label">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polyline points="9 11 12 14 22 4" />
+                                    <path
+                                        d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                    />
+                                </svg>
+                                Prompt
+                            </span>
+                            <button
+                                class="btn-copy"
+                                onclick="copyBlock('pb1', this)"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <rect
+                                        x="9"
+                                        y="9"
+                                        width="13"
+                                        height="13"
+                                        rx="2"
+                                    />
+                                    <path
+                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                    />
+                                </svg>
+                                Copiar
+                            </button>
+                        </div>
+                        <div class="prompt-body">
+                            <div class="prompt-segment">
+                                Estamos desenvolvendo um jogo educacional
+                                chamado Acerte a Sílaba. Vou descrever o que
+                                quero ensinar com esse jogo:
+                            </div>
+                            <textarea
+                                class="paste-area"
+                                data-label="O que quero ensinar"
+                            >
+Quero que crianças em fase de alfabetização aprendam a reconhecer e combinar sílabas para formar palavras. O método que embasa o jogo é o ABACADA, que usa associação entre imagem, sílaba e palavra para facilitar o aprendizado, especialmente para crianças com necessidades especiais.</textarea
+                            >
+                            <div class="prompt-segment">
+                                Com base nisso, crie um documento de objetivo
+                                pedagógico estruturado exatamente com: o que
+                                ensinar, para quem e com qual método pedagógico.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ETAPA 2 -->
+            <section id="step-2" class="step">
+                <div class="step-top">
+                    <span class="step-num">02</span>
+                    <div>
+                        <h2 class="step-title">Design do Jogo</h2>
+                        <p class="step-tool">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                            <a
+                                href="https://antigravity.google/download"
+                                target="_blank"
+                                rel="noopener"
+                                >Antigravity</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <p class="step-desc">
+                        Na mesma conversa da etapa anterior, envie o prompt
+                        abaixo para gerar o design do jogo.
+                    </p>
+                    <p class="step-desc">
+                        Você também pode usar o
+                        <a
+                            href="https://gemini.google.com"
+                            target="_blank"
+                            rel="noopener"
+                            >Gemini</a
+                        >
+                        ou
+                        <a
+                            href="https://chatgpt.com"
+                            target="_blank"
+                            rel="noopener"
+                            >ChatGPT</a
+                        >
+                        se preferir.
+                    </p>
+
+                    <div class="prompt-block" id="pb2">
+                        <div class="prompt-meta">
+                            <span class="prompt-label">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polyline points="9 11 12 14 22 4" />
+                                    <path
+                                        d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                    />
+                                </svg>
+                                Prompt
+                            </span>
+                            <button
+                                class="btn-copy"
+                                onclick="copyBlock('pb2', this)"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <rect
+                                        x="9"
+                                        y="9"
+                                        width="13"
+                                        height="13"
+                                        rx="2"
+                                    />
+                                    <path
+                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                    />
+                                </svg>
+                                Copiar
+                            </button>
+                        </div>
+                        <div class="prompt-body">
+                            <div class="prompt-segment">
+                                Tenho algumas ideias para a mecânica do jogo:
+                            </div>
+                            <textarea
+                                class="paste-area"
+                                data-label="Ideias para a mecânica"
+                            >
+Tenho algumas ideias sobre como o jogo poderia funcionar. O jogador vê uma imagem e precisa identificar a sílaba correta para completar a palavra. Ainda não tenho certeza sobre como será o feedback quando errar ou acertar, nem como o jogo vai progredir entre as palavras.</textarea
+                            >
+                            <div class="prompt-segment">
+                                Com base nessas ideias e no objetivo pedagógico
+                                que definimos, crie um documento de design do
+                                jogo estruturado exatamente com: tipo de jogo,
+                                mecânica principal, sistema de feedback e
+                                sistema de progressão. Sinta-se livre para
+                                sugerir melhorias e complementar o que não ficou
+                                definido.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ETAPA 3 -->
+            <section id="step-3" class="step">
+                <div class="step-top">
+                    <span class="step-num">03</span>
+                    <div>
+                        <h2 class="step-title">Ideação Assistida por IA</h2>
+                        <p class="step-tool">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                            <a
+                                href="https://antigravity.google/download"
+                                target="_blank"
+                                rel="noopener"
+                                >Antigravity</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <p class="step-desc">
+                        Na mesma conversa, peça ao agente para revisar e
+                        fortalecer o que foi definido até aqui.
+                    </p>
+                    <p class="step-desc">
+                        Você também pode usar o
+                        <a
+                            href="https://gemini.google.com"
+                            target="_blank"
+                            rel="noopener"
+                            >Gemini</a
+                        >
+                        ou
+                        <a
+                            href="https://chatgpt.com"
+                            target="_blank"
+                            rel="noopener"
+                            >ChatGPT</a
+                        >
+                        se preferir.
+                    </p>
+
+                    <div class="prompt-block" id="pb3">
+                        <div class="prompt-meta">
+                            <span class="prompt-label">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polyline points="9 11 12 14 22 4" />
+                                    <path
+                                        d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                    />
+                                </svg>
+                                Prompt
+                            </span>
+                            <button
+                                class="btn-copy"
+                                onclick="copyBlock('pb3', this)"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <rect
+                                        x="9"
+                                        y="9"
+                                        width="13"
+                                        height="13"
+                                        rx="2"
+                                    />
+                                    <path
+                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                    />
+                                </svg>
+                                Copiar
+                            </button>
+                        </div>
+                        <div class="prompt-body">
+                            <div class="prompt-segment">
+                                Revise os dois documentos que criamos — objetivo
+                                pedagógico e design do jogo — considerando boas
+                                práticas de design de jogos educacionais. Sugira
+                                melhorias para fortalecer o aspecto pedagógico,
+                                tornar a mecânica mais clara e o feedback mais
+                                eficaz.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                        Leia as sugestões da IA com atenção. Você não precisa
+                        aceitar tudo — edite, questione ou peça para ajustar o
+                        que não fizer sentido para o seu contexto antes de
+                        seguir para a próxima etapa.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ETAPA 4 -->
+            <section id="step-4" class="step">
+                <div class="step-top">
+                    <span class="step-num">04</span>
+                    <div>
+                        <h2 class="step-title">Design Artístico</h2>
+                        <p class="step-tool">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                            <a
+                                href="https://antigravity.google/download"
+                                target="_blank"
+                                rel="noopener"
+                                >Antigravity</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <p class="step-desc">
+                        Na mesma conversa, peça o documento de design artístico
+                        — ele define o estilo visual de todos os assets do jogo.
+                    </p>
+                    <p class="step-desc">
+                        Você também pode usar o
+                        <a
+                            href="https://gemini.google.com"
+                            target="_blank"
+                            rel="noopener"
+                            >Gemini</a
+                        >
+                        ou
+                        <a
+                            href="https://chatgpt.com"
+                            target="_blank"
+                            rel="noopener"
+                            >ChatGPT</a
+                        >
+                        se preferir.
+                    </p>
+
+                    <div class="prompt-block" id="pb4">
+                        <div class="prompt-meta">
+                            <span class="prompt-label">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polyline points="9 11 12 14 22 4" />
+                                    <path
+                                        d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                    />
+                                </svg>
+                                Prompt
+                            </span>
+                            <button
+                                class="btn-copy"
+                                onclick="copyBlock('pb4', this)"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <rect
+                                        x="9"
+                                        y="9"
+                                        width="13"
+                                        height="13"
+                                        rx="2"
+                                    />
+                                    <path
+                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                    />
+                                </svg>
+                                Copiar
+                            </button>
+                        </div>
+                        <div class="prompt-body">
+                            <div class="prompt-segment">
+                                Tenho uma ideia visual para o jogo:
+                            </div>
+                            <textarea
+                                class="paste-area"
+                                data-label="Ideia visual"
+                            >
+Quero algo colorido e acolhedor, estilo cartoon flat, com cores vibrantes e suaves. O cenário de fundo pode ser uma floresta ou jardim durante o dia. Os personagens e objetos devem ser simples, expressivos e fofos, sem sombras duras. O tom geral deve ser encorajador e infantil.</textarea
+                            >
+                            <div class="prompt-segment">
+                                Com base nisso e em tudo que definimos até
+                                agora, crie o documento de design artístico
+                                estruturado com: estilo visual, paleta de cores,
+                                padrão dos personagens, padrão dos cenários e
+                                tom geral.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                        Guarde a descrição do cenário e o estilo visual — você
+                        vai precisar na Etapa 6.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ETAPA 5 -->
+            <section id="step-5" class="step">
+                <div class="step-top">
+                    <span class="step-num">05</span>
+                    <div>
+                        <h2 class="step-title">Código no Antigravity</h2>
+                        <p class="step-tool">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                            <a
+                                href="https://antigravity.google/download"
+                                target="_blank"
+                                rel="noopener"
+                                >Antigravity</a
+                            >
+                            &nbsp;+&nbsp;
+                            <a
+                                href="https://godotengine.org"
+                                target="_blank"
+                                rel="noopener"
+                                >Godot Engine</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <p class="step-desc">
+                        Com o projeto Godot aberto no Antigravity, use o painel
+                        do agente à direita e cole o prompt abaixo para gerar a
+                        lógica do jogo.
+                    </p>
+
+                    <div class="note">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                        Todos os grupos vão criar o mesmo jogo — Acerte a
+                        Sílaba. As palavras nos campos abaixo são exemplos que
+                        você pode trocar pelas suas.
+                    </div>
+
+                    <div class="prompt-block" id="pb5">
+                        <div class="prompt-meta">
+                            <span class="prompt-label">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polyline points="9 11 12 14 22 4" />
+                                    <path
+                                        d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                    />
+                                </svg>
+                                Prompt
+                            </span>
+                            <button
+                                class="btn-copy"
+                                onclick="copyBlock('pb5', this)"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="11"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <rect
+                                        x="9"
+                                        y="9"
+                                        width="13"
+                                        height="13"
+                                        rx="2"
+                                    />
+                                    <path
+                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                    />
+                                </svg>
+                                Copiar
+                            </button>
+                        </div>
+                        <div class="prompt-body">
+                            <div class="prompt-segment">
+                                Agora vamos implementar o jogo. Com base em tudo
+                                que definimos — objetivo pedagógico, design do
+                                jogo e design artístico — crie um MVP simples no
+                                Godot chamado Acerte a Sílaba.<br /><br />Use as
+                                definições de mecânica, feedback e progressão
+                                que já estabelecemos. Mantenha o mais simples
+                                possível — apenas o necessário para
+                                funcionar.<br /><br />Lista de palavras para o
+                                jogo:
+                                <input
+                                    class="f"
+                                    value="GATO"
+                                    placeholder="palavra 1"
+                                />,
+                                <input
+                                    class="f"
+                                    value="BOLA"
+                                    placeholder="palavra 2"
+                                />,
+                                <input
+                                    class="f"
+                                    value="MALA"
+                                    placeholder="palavra 3"
+                                /><br /><br />Use GDScript com código comentado
+                                e siga a estrutura de pastas que criamos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                        Se precisar de ajustes no código, descreva o problema
+                        diretamente no painel do agente.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ETAPA 6 -->
+            <section id="step-6" class="step">
+                <div class="step-top">
+                    <span class="step-num">06</span>
+                    <div>
+                        <h2 class="step-title">Assets Visuais</h2>
+                        <p class="step-tool">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                            <a
+                                href="https://antigravity.google/download"
+                                target="_blank"
+                                rel="noopener"
+                                >Antigravity</a
+                            >
+                            &nbsp;+&nbsp;
+                            <a
+                                href="https://gemini.google/overview/image-generation/"
+                                target="_blank"
+                                rel="noopener"
+                                >NanoBanana</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <p class="step-desc">
+                        Use o Antigravity para gerar os prompts de imagem com
+                        base no documento artístico. Depois cole cada prompt no
+                        NanoBanana para gerar as imagens.
+                    </p>
+
+                    <!-- 6a -->
+                    <div class="sub-step">
+                        <p class="sub-label">
+                            6a — Imagem de Fundo
+                            <span class="sub-link-row">
+                                <a
+                                    href="https://antigravity.google/download"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="sub-link"
+                                    >Antigravity ↗</a
+                                >
+                                <a
+                                    href="https://gemini.google/overview/image-generation/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="sub-link"
+                                    >NanoBanana ↗</a
+                                >
+                            </span>
+                        </p>
+                        <p class="step-desc">
+                            Peça ao Antigravity para gerar o prompt. Depois
+                            copie o resultado e cole no NanoBanana.
+                        </p>
+
+                        <div class="prompt-block" id="pb6a">
+                            <div class="prompt-meta">
+                                <span class="prompt-label">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="11"
+                                        height="11"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="9 11 12 14 22 4" />
+                                        <path
+                                            d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                        />
+                                    </svg>
+                                    Prompt — Antigravity
+                                </span>
+                                <button
+                                    class="btn-copy"
+                                    onclick="copyBlock('pb6a', this)"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="11"
+                                        height="11"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <rect
+                                            x="9"
+                                            y="9"
+                                            width="13"
+                                            height="13"
+                                            rx="2"
+                                        />
+                                        <path
+                                            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                        />
+                                    </svg>
+                                    Copiar
+                                </button>
+                            </div>
+                            <div class="prompt-body">
+                                <div class="prompt-segment">
+                                    Com base no documento de design artístico
+                                    que criamos, gere um prompt em português
+                                    para o NanoBanana criar a imagem de fundo do
+                                    jogo. O prompt deve seguir fielmente o
+                                    estilo visual, paleta de cores e cenário que
+                                    definimos. Retorne apenas o prompt, sem
+                                    explicações.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="note">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="12" />
+                                <line x1="12" y1="16" x2="12.01" y2="16" />
+                            </svg>
+                            <span
+                                >Copie o prompt gerado pelo Antigravity e cole
+                                no
+                                <a
+                                    href="https://gemini.google/overview/image-generation/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >NanoBanana</a
+                                >
+                                para gerar a imagem de fundo.</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- 6b -->
+                    <div class="sub-step">
+                        <p class="sub-label">
+                            6b — Imagens das Palavras
+                            <span class="sub-link-row">
+                                <a
+                                    href="https://antigravity.google/download"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="sub-link"
+                                    >Antigravity ↗</a
+                                >
+                                <a
+                                    href="https://gemini.google/overview/image-generation/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="sub-link"
+                                    >NanoBanana ↗</a
+                                >
+                                <a
+                                    href="https://www.remove.bg"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="sub-link"
+                                    >remove.bg ↗</a
+                                >
+                            </span>
+                        </p>
+                        <p class="step-desc">
+                            Para cada palavra, peça ao Antigravity para gerar o
+                            prompt. Depois gere a imagem no NanoBanana e remova
+                            o fundo no remove.bg.
+                        </p>
+
+                        <div class="word-selector">
+                            <button
+                                class="word-btn active"
+                                data-word="GATO"
+                                onclick="selectWord(this)"
+                            >
+                                GA · TO
+                            </button>
+                            <button
+                                class="word-btn"
+                                data-word="BOLA"
+                                onclick="selectWord(this)"
+                            >
+                                BO · LA
+                            </button>
+                            <button
+                                class="word-btn"
+                                data-word="MALA"
+                                onclick="selectWord(this)"
+                            >
+                                MA · LA
+                            </button>
+                        </div>
+
+                        <div class="prompt-block" id="pb6b">
+                            <div class="prompt-meta">
+                                <span class="prompt-label"
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="11"
+                                        height="11"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="9 11 12 14 22 4" />
+                                        <path
+                                            d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                        />
+                                    </svg>
+                                    Prompt — Antigravity</span
+                                >
+                                <button
+                                    class="btn-copy"
+                                    onclick="copyBlock('pb6b', this)"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="11"
+                                        height="11"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <rect
+                                            x="9"
+                                            y="9"
+                                            width="13"
+                                            height="13"
+                                            rx="2"
+                                        />
+                                        <path
+                                            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                        />
+                                    </svg>
+                                    Copiar
+                                </button>
+                            </div>
+                            <div class="prompt-body">
+                                <div class="prompt-segment">
+                                    Com base no documento de design artístico
+                                    que criamos, gere um prompt em português
+                                    para o NanoBanana criar a imagem do objeto
+                                    <input
+                                        class="f"
+                                        id="word-input"
+                                        value="GATO"
+                                        placeholder="objeto"
+                                    />
+                                    para o jogo. O prompt deve seguir fielmente
+                                    o estilo visual que definimos. Retorne
+                                    apenas o prompt, sem explicações.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="note">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="12" />
+                                <line x1="12" y1="16" x2="12.01" y2="16" />
+                            </svg>
+                            <span
+                                >Copie o prompt, gere no
+                                <a
+                                    href="https://gemini.google/overview/image-generation/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >NanoBanana</a
+                                >
+                                e remova o fundo no
+                                <a
+                                    href="https://www.remove.bg"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >remove.bg</a
+                                >. Repita para cada palavra.</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- 6c -->
+                    <div class="sub-step">
+                        <p class="sub-label">
+                            6c — Linkar assets ao código
+                            <a
+                                href="https://antigravity.google/download"
+                                target="_blank"
+                                rel="noopener"
+                                class="sub-link"
+                                >Antigravity ↗</a
+                            >
+                        </p>
+                        <p class="step-desc">
+                            Com os assets salvos na pasta correta, peça ao
+                            Antigravity para integrá-los ao jogo.
+                        </p>
+
+                        <div class="prompt-block" id="pb6d">
+                            <div class="prompt-meta">
+                                <span class="prompt-label">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="11"
+                                        height="11"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="9 11 12 14 22 4" />
+                                        <path
+                                            d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                                        />
+                                    </svg>
+                                    Prompt — Antigravity
+                                </span>
+                                <button
+                                    class="btn-copy"
+                                    onclick="copyBlock('pb6d', this)"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="11"
+                                        height="11"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <rect
+                                            x="9"
+                                            y="9"
+                                            width="13"
+                                            height="13"
+                                            rx="2"
+                                        />
+                                        <path
+                                            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                        />
+                                    </svg>
+                                    Copiar
+                                </button>
+                            </div>
+                            <div class="prompt-body">
+                                <div class="prompt-segment">
+                                    Acabei de adicionar os assets visuais na
+                                    pasta do projeto. Integre as imagens ao
+                                    jogo. Mantenha o código simples e comentado.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ETAPA 7 -->
+            <section id="step-7" class="step">
+                <div class="step-top">
+                    <span class="step-num">07</span>
+                    <div>
+                        <h2 class="step-title">Áudio</h2>
+                        <p class="step-tool">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polygon
+                                    points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"
+                                />
+                                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                            </svg>
+                            <a href="https://elevenlabs.io" target="_blank" rel="noopener">ElevenLabs</a>
+                            &nbsp;+&nbsp;
+                            <a href="https://antigravity.google/download" target="_blank" rel="noopener">Antigravity</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <div class="sub-step" style="margin-top: 0">
+                        <p class="sub-label">
+                            Áudio Pedagógico (sílabas e palavras)
+                            <a
+                                href="https://elevenlabs.io"
+                                target="_blank"
+                                rel="noopener"
+                                class="sub-link"
+                                >ElevenLabs ↗</a
+                            >
+                        </p>
+                        <ol class="step-list">
+                            <li data-n="1">
+                                Acesse
+                                <a
+                                    href="https://elevenlabs.io"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >elevenlabs.io</a
+                                >
+                                e crie uma conta gratuita
+                            </li>
+                            <li data-n="2">
+                                Digite a sílaba ou palavra que deseja gerar (ex:
+                                <em>GA</em>, <em>TO</em>, <em>GATO</em>)
+                            </li>
+                            <li data-n="3">
+                                Escolha uma voz clara e de tom infantil
+                            </li>
+                            <li data-n="4">
+                                Clique em <strong>Generate</strong> e depois em
+                                <strong>Download</strong>
+                            </li>
+                            <li data-n="5">
+                                Repita para cada sílaba e palavra do jogo
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- 7b -->
+                    <div class="sub-step">
+                        <p class="sub-label">
+                            7b — Integrar áudios ao jogo
+                            <a href="https://antigravity.google/download" target="_blank" rel="noopener" class="sub-link">Antigravity ↗</a>
+                        </p>
+                        <p class="step-desc">Com os áudios gerados, peça ao Antigravity para integrá-los ao jogo.</p>
+
+                        <div class="prompt-block" id="pb7b">
+                            <div class="prompt-meta">
+                                <span class="prompt-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                                    Prompt — Antigravity
+                                </span>
+                                <button class="btn-copy" onclick="copyBlock('pb7b', this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    Copiar
+                                </button>
+                            </div>
+                            <div class="prompt-body">
+                                <div class="prompt-segment">Acabei de gerar os áudios no ElevenLabs. Integre-os ao jogo: use os arquivos de sílabas para o feedback sonoro de cada escolha do jogador, e os arquivos de palavras completas para a pronúncia ao exibir cada palavra na tela. Mantenha o código simples e comentado.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ETAPA 8 -->
+            <section id="step-8" class="step">
+                <div class="step-top">
+                    <span class="step-num">08</span>
+                    <div>
+                        <h2 class="step-title">Testes e Ajustes</h2>
+                        <p class="step-subtitle">
+                            Checklist mínimo antes de publicar
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-body">
+                    <p class="step-desc">
+                        Percorra o checklist abaixo para garantir que o jogo
+                        está funcionando corretamente antes de publicar.
+                    </p>
+
+                    <ul class="checklist">
+                        <li>
+                            <label
+                                ><input type="checkbox" /><span
+                                    >O jogo abre sem erros</span
+                                ></label
+                            >
+                        </li>
+                        <li>
+                            <label
+                                ><input type="checkbox" /><span
+                                    >As sílabas corretas funcionam</span
+                                ></label
+                            >
+                        </li>
+                        <li>
+                            <label
+                                ><input type="checkbox" /><span
+                                    >O feedback de acerto e erro está
+                                    claro</span
+                                ></label
+                            >
+                        </li>
+                        <li>
+                            <label
+                                ><input type="checkbox" /><span
+                                    >As imagens aparecem corretamente</span
+                                ></label
+                            >
+                        </li>
+                        <li>
+                            <label
+                                ><input type="checkbox" /><span
+                                    >O áudio toca</span
+                                ></label
+                            >
+                        </li>
+                        <li>
+                            <label
+                                ><input type="checkbox" /><span
+                                    >A progressão de fases funciona</span
+                                ></label
+                            >
+                        </li>
+                        <li>
+                            <label
+                                ><input type="checkbox" /><span
+                                    >A tela de parabéns aparece ao final</span
+                                ></label
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="note done">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        Se precisar de ajustes no código, volte à Etapa 5 e
+                        descreva o problema para o Antigravity corrigir.
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <span class="footer-title"
+                ><em
+                    >Guia para Desenvolvimento de Jogos Educacionais com IA
+                    Generativa</em
+                ></span
+            >
+            <span class="footer-credit">Gabriel Witor · UENP · 2026</span>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
